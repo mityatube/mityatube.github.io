@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шаблон сайта</title>
+    <meta name="description" content="Описание шаблона сайта.">
+    
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+    
+    <!-- Page Meta Tags -->
+    
+    
+    <!-- Page Constructor Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Custom CSS -->
+    
+    
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+                'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+                sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        #root {
+            min-height: 100vh;
+        }
+        
+        /* Loading indicator */
+        .loading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+            color: #666;
+        }
+        
+        .loading-spinner {
+            width: 40px;
+            height: 40px;
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #007acc;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-right: 12px;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        /* Error styles */
+        .ssr-error {
+            padding: 20px;
+            margin: 20px;
+            border: 1px solid #f5c6cb;
+            border-radius: 4px;
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+        
+        .ssr-error h2 {
+            margin-top: 0;
+            color: #721c24;
+        }
+        
+        .ssr-error details {
+            margin-top: 10px;
+        }
+        
+        .ssr-error pre {
+            background: #fff;
+            padding: 10px;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="root"><div class="g-root g-root_theme_light pc-page-constructor"><div class="pc-page-constructor__wrapper"><div class="pc-layout"><div class="pc-Grid pc-navigation pc-navigation_with-border pc-layout__navigation"><div class="container-fluid "><div class="row"><div class="col"><nav><div class="pc-desktop-navigation__wrapper"><div class="pc-desktop-navigation__left"><a class="pc-logo pc-desktop-navigation__logo" href="index.html" title="Шаблон сайта"><picture><img alt="Logo icon" class="pc-logo__icon" src="assets/logoVyatkaArt.svg"/></picture><span class="pc-logo__text">Шаблон сайта</span></a></div><div class="pc-desktop-navigation__navigation-container"><div class="pc-overflow-scroller__container"><div class="pc-overflow-scroller pc-desktop-navigation__navigation"><div class="pc-overflow-scroller__wrapper" style="left:0"><ul class="pc-desktop-navigation__links"><li class="pc-navigation-item pc-navigation-item_menu-layout_desktop pc-desktop-navigation__item"><a href="index.html#123" title="Ссылка на элемент" class="pc-navigation-link pc-navigation-item__content pc-navigation-item__content_type_link" type="link"><span class="pc-content-wrapper__text">Ссылка на элемент</span></a></li><li class="pc-navigation-item pc-navigation-item_menu-layout_desktop pc-desktop-navigation__item"><a href="about.html" title="Ссылка на страницу" class="pc-navigation-link pc-navigation-item__content pc-navigation-item__content_type_link" type="link"><span class="pc-content-wrapper__text">Ссылка на страницу</span></a></li><li class="pc-navigation-item pc-navigation-item_menu-layout_desktop pc-desktop-navigation__item"><a href="map.html" title="Карта" class="pc-navigation-link pc-navigation-item__content pc-navigation-item__content_type_link" type="link"><span class="pc-content-wrapper__text">Карта</span></a></li><li class="pc-navigation-item pc-navigation-item_menu-layout_desktop pc-desktop-navigation__item"><a href="https://yandex.com/" title="Внешняя ссылка" class="pc-navigation-link pc-navigation-item__content pc-navigation-item__content_type_link" type="link" target="_blank" rel="noopener noreferrer"><span class="pc-content-wrapper__text">Внешняя ссылка</span></a></li></ul></div></div></div></div><div class="pc-desktop-navigation__right"><button type="button" aria-label="Button label" class="pc-control pc-control_size_l pc-control_theme_primary pc-mobile-menu-button"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" class="g-icon" fill="currentColor" stroke="none" data-qa="icon-test-id" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 16"><path fill="currentColor" fill-rule="evenodd" d="M1.25 3.25A.75.75 0 0 1 2 2.5h12A.75.75 0 0 1 14 4H2a.75.75 0 0 1-.75-.75m0 4.75A.75.75 0 0 1 2 7.25h12a.75.75 0 0 1 0 1.5H2A.75.75 0 0 1 1.25 8M2 12a.75.75 0 0 0 0 1.5h12a.75.75 0 0 0 0-1.5z" clip-rule="evenodd"></path></svg></svg></button></div></div><div role="group" tabindex="-1"></div></nav></div></div></div></div><main class="pc-layout__content"><header class="pc-header-block pc-header-block_media-view_full pc-header-block_controls-view_light"><div class="pc-header-block__background pc-header-block__background_media" style="background-color:#e3f2fd"><div class="pc-Media pc-header-block__background-media" style="background-color:#e3f2fd"></div></div><div class="pc-Grid pc-header-block"><div class="container-fluid pc-header-block__container-fluid"><div class="row"><div class="col col-reset pc-header-block__content-wrapper"><div class="row"><div class="col pc-header-block__content pc-header-block__content_offset_default pc-header-block__content_theme_light pc-header-block__content_vertical-offset_m"><div class="col  col-lg-8 col-md-8 col-sm-12 col-12 pc-header-block__content-inner"><h1 class="pc-header-block__title-container"><span class="yfm yfm_constructor yfm_constructor_theme_light pc-header-block__title">Заголовок</span></h1><div class="pc-header-block__description pc-header-block__description_theme_light"><span class="yfm yfm_constructor yfm_constructor_theme_light"><p>Текст с&nbsp;описанием, расположенные под заголовком в&nbsp;блоке.</p></span></div></div></div></div></div></div></div></div></header><div class="pc-Grid"><div class="container-fluid "><div class="row pc-constructor-row"><div class="col"><div class="col col-reset pc-block-base pc-block-base_indentTop_l pc-block-base_indentBottom_l pc-constructor-block pc-constructor-block_type_companies-block"><div class="pc-AnimateBlock false pc-companies-block"><span style="font-size:0"></span><div class="pc-companies-block__content"><div class="pc-title"><div class="col  col-12 col-sm-12 col-reset"><h2 class="pc-title-item pc-title-item_size_m pc-title-item_reset-margin" data-qa="undefined-header"><span class="yfm yfm_constructor pc-title-item__text">Изображение&nbsp;1</span></h2></div></div><div class="pc-companies-block__images"><picture><source srcSet="assets/logoVyatkaArt.svg" media="(max-width: 577px)"/><source srcSet="assets/logoVyatkaArt.svg" media="(max-width: 769px) and (min-width: 577px)"/><img alt="assets/logoVyatkaArt.svg" class="pc-companies-block__image" src="assets/logoVyatkaArt.svg"/></picture></div></div></div></div><div class="col col-reset pc-block-base pc-block-base_indentTop_l pc-block-base_indentBottom_l pc-constructor-block pc-constructor-block_type_media-block"><div class="pc-AnimateBlock false pc-media-base"><span style="font-size:0"></span><div class="pc-Grid"><div class="container-fluid "><div class="row pc-media-base__row"><div class="col  col-md-6 col-12 pc-media-base__content"><div class="pc-media-base-content"><div class="col  col-12 col-md-12 col-reset pc-content pc-content_size_l pc-content_theme_default"><div class="pc-title pc-content__title" id="g-:R1l5q:"><div class="col  col-12 col-reset"><h2 class="pc-title-item pc-title-item_size_m pc-title-item_reset-margin" data-qa="undefined-header"><span class="yfm yfm_constructor pc-title-item__text">Изображение&nbsp;2</span></h2></div></div><div class="pc-content__text"><span class="yfm yfm_constructor yfm_constructor_size_l"><p>Текст с&nbsp;левой сторооны от&nbsp;картинки.</p></span></div><div class="pc-buttons pc-buttons_size_l pc-content__buttons pc-content__buttons_size_l"></div></div></div></div><div class="col  col-md-6 col-12"><div class="pc-media-base__card"><div class="pc-Media pc-media-block pc-media-block_border_shadow"><picture><img class="pc-media-component-image__item pc-media-block__image" src="assets/logoVyatkaArt.svg"/></picture></div></div></div></div></div></div></div></div><div class="col col-reset pc-block-base pc-block-base_indentTop_l pc-block-base_indentBottom_l pc-constructor-block pc-constructor-block_type_banner-block"><div class="pc-AnimateBlock false pc-banner-block"><span style="font-size:0"></span><div class="pc-banner-card pc-banner-card_theme_light pc-banner-card_media-view_full"><div class="pc-banner-card__content" style="background-color:#EFF2F8"><div class="pc-banner-card__info"><div class="pc-banner-card__text"><h2 class="yfm yfm_constructor pc-banner-card__title">Заголовок блока с&nbsp;текстом и&nbsp;фотографией</h2><span class="yfm yfm_constructor pc-banner-card__subtitle"><p>Текст блока с&nbsp;фотографией.</p></span></div><a class="g-button g-button_view_raised g-button_size_xl g-button_pin_round-round pc-button-block pc-button-block_size_xl pc-button-block_theme_raised pc-banner-card__button" href="https://yandex.com" aria-disabled="false"><span class="g-button__text"><span class="pc-button-block__content"><span class="pc-button-block__text">Кнопка</span></span></span></a></div><div class="pc-storage-background-image pc-banner-card__image" data-qa="background-image"><picture data-qa="background-image-image"><img class="pc-storage-background-image__img" src="assets/Suzdal.jpeg"/></picture></div></div></div></div></div><div class="col col-reset pc-block-base pc-block-base_indentTop_l pc-block-base_indentBottom_l pc-constructor-block pc-constructor-block_type_CustomBlock"><div id="123" class="custom-block custom-block--default "><h2>Настраиваемый элемент</h2><p>Текст с описанием блока.</p></div></div><div class="col col-reset pc-block-base pc-block-base_indentTop_l pc-block-base_indentBottom_l pc-constructor-block pc-constructor-block_type_CustomBlock"><div id="" class="custom-block custom-block--primary "><h2>Пример настраиваемого блока</h2><p>Текст с описанием</p></div></div><div class="col col-reset pc-block-base pc-block-base_indentTop_l pc-block-base_indentBottom_l pc-constructor-block pc-constructor-block_type_ShareBlock"><div class="pc-share-block"><h5 class="yfm yfm_constructor pc-share-block__title">Блок с сылками на социальные сети</h5><div class="pc-share-block__items"><a href="https://vk.com/id133710" target="_blank" aria-label="vk logo" rel="noopener noreferrer" aria-disabled="false" class="g-button g-button_view_flat g-button_size_l g-button_pin_round-round pc-share-block__item pc-share-block__item_type_vk"><span class="g-button__icon-inner"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="g-icon pc-share-block__icon pc-share-block__icon_type_vk" fill="currentColor" stroke="none" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.934 13.916c.73.713 1.5 1.383 2.155 2.167.289.349.563.708.772 1.113.297.575.028 1.208-.488 1.242l-3.205-.001c-.826.068-1.486-.265-2.04-.83-.444-.452-.855-.933-1.282-1.4a3.04 3.04 0 0 0-.576-.513c-.438-.284-.818-.197-1.068.26-.254.464-.312.978-.337 1.495-.034.754-.263.953-1.02.987-1.62.077-3.158-.168-4.587-.985-1.26-.721-2.236-1.738-3.086-2.89-1.655-2.242-2.922-4.706-4.06-7.239-.257-.57-.07-.877.56-.888a87.013 87.013 0 0 1 3.138-.001c.425.006.706.25.87.651.566 1.391 1.258 2.715 2.127 3.941.231.327.467.653.803.883.372.255.655.17.83-.244.11-.262.16-.545.184-.826.083-.967.094-1.933-.051-2.897-.09-.602-.428-.991-1.029-1.105-.306-.058-.26-.172-.112-.347.257-.302.5-.49.983-.49h3.622c.57.113.697.37.775.943l.003 4.024c-.006.222.11.881.51 1.028.321.105.532-.152.724-.355.868-.92 1.487-2.008 2.04-3.134.245-.495.456-1.01.66-1.524.152-.381.39-.569.82-.56l3.485.003c.104 0 .208.001.309.018.587.1.748.353.566.927-.285.9-.842 1.65-1.385 2.403-.582.805-1.204 1.582-1.78 2.39-.53.74-.488 1.112.17 1.754z"></path></svg></svg></span></a><a href="https://t.me/MityaTube" target="_blank" aria-label="telegram logo" rel="noopener noreferrer" aria-disabled="false" class="g-button g-button_view_flat g-button_size_l g-button_pin_round-round pc-share-block__item pc-share-block__item_type_telegram"><span class="g-button__icon-inner"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="g-icon pc-share-block__icon pc-share-block__icon_type_telegram" fill="currentColor" stroke="none" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M2.336 11.932l4.378 1.634 1.694 5.45a.515.515 0 0 0 .819.246l2.44-1.99a.728.728 0 0 1 .888-.024l4.401 3.196c.303.22.732.054.808-.312l3.225-15.51a.516.516 0 0 0-.691-.587L2.33 10.968a.516.516 0 0 0 .006.965zm5.799.764l8.556-5.27c.154-.094.312.114.18.237L9.81 14.226c-.248.231-.408.54-.454.876l-.24 1.783c-.032.238-.367.261-.432.031l-.925-3.25a.862.862 0 0 1 .376-.97z"></path></svg></svg></span></a></div></div></div><div class="col col-reset pc-block-base pc-block-base_indentTop_0 pc-block-base_indentBottom_0 pc-constructor-block pc-constructor-block_type_LandingFooter"><footer class="gn-footer gn-footer_desktop gn-footer_with-divider gn-footer_view_normal gn-footer_desktop"><div class="gn-footer__menu"><ul role="menu" class="g-menu g-menu_size_m gn-footer__list"><li class="g-menu__list-item"><a role="menuitem" tabindex="0" class="g-menu__item g-menu__item_interactive gn-footer-menu-item gn-footer__menu-item" href="about.html" target="_self"><div class="g-menu__item-content">О шаблоне</div></a></li><li class="g-menu__list-item"><a role="menuitem" tabindex="0" class="g-menu__item g-menu__item_interactive gn-footer-menu-item gn-footer__menu-item" href=" map.html" target="_self"><div class="g-menu__item-content">Карта</div></a></li></ul></div><div class="gn-footer__right"><small class="gn-footer__copyright">© 2025 Название</small><div><div class="gn-logo"><span class="gn-logo__btn-logo"><span class="gn-logo__logo-icon-place"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" class="g-icon" fill="currentColor" stroke="none" aria-hidden="true">assets/logo.svg</svg></span><div class="gn-logo__logo" style="font-size:15px">Шаблон сайта</div></span></div></div></div></footer></div></div></div></div></div></main></div></div></div></div>
+    
+    <!-- Page Constructor Client Bundle -->
+    <script src="client.js"></script>
+    
+    <script>
+        // Page configuration
+        const pageConfig = {
+  "meta": {
+    "title": "Шаблон сайта",
+    "description": "Описание шаблона сайта."
+  },
+  "blocks": [
+    {
+      "type": "companies-block",
+      "visible?": "all",
+      "title": "Изображение&nbsp;1",
+      "images": {
+        "light": {
+          "desktop": "assets/logoVyatkaArt.svg",
+          "tablet": "assets/logoVyatkaArt.svg",
+          "mobile": "assets/logoVyatkaArt.svg",
+          "alt": "assets/logoVyatkaArt.svg"
+        }
+      }
+    },
+    {
+      "type": "header-block",
+      "visible?": "all",
+      "title": "Заголовок",
+      "description": "<p>Текст с&nbsp;описанием, расположенные под заголовком в&nbsp;блоке.</p>",
+      "background": {
+        "color": "#e3f2fd"
+      }
+    },
+    {
+      "largeMedia": false,
+      "mediaOnly": false,
+      "size": "l",
+      "type": "media-block",
+      "media": {
+        "light": {
+          "image": "assets/logoVyatkaArt.svg"
+        },
+        "dark": {
+          "image": "assets/logoVyatkaArt.svg"
+        }
+      },
+      "title": "Изображение&nbsp;2",
+      "description": "<p>Текст с&nbsp;левой сторооны от&nbsp;картинки.</p>"
+    },
+    {
+      "theme": "light",
+      "type": "banner-block",
+      "visible?": "all",
+      "className": "",
+      "title": "Заголовок блока с&nbsp;текстом и&nbsp;фотографией",
+      "subtitle": "<p>Текст блока с&nbsp;фотографией.</p>",
+      "image": {
+        "light": "assets/Suzdal.jpeg",
+        "dark": "assets/Suzdal.jpeg"
+      },
+      "disableCompress": true,
+      "color": {
+        "light": "#EFF2F8",
+        "dark": "#262626"
+      },
+      "button": {
+        "text": "Кнопка",
+        "url": "https://yandex.com"
+      }
+    },
+    {
+      "type": "CustomBlock",
+      "title": "Настраиваемый элемент",
+      "content": "Текст с описанием блока.",
+      "id": "123"
+    },
+    {
+      "type": "CustomBlock",
+      "title": "Пример настраиваемого блока",
+      "content": "Текст с описанием",
+      "variant": "primary"
+    },
+    {
+      "type": "ShareBlock",
+      "title": "Блок с сылками на социальные сети",
+      "items": [
+        {
+          "type": "Vk",
+          "url": "https://vk.com/id133710"
+        },
+        {
+          "type": "Telegram",
+          "url": "https://t.me/MityaTube"
+        }
+      ]
+    },
+    {
+      "type": "LandingFooter",
+      "indent": {
+        "top": "0",
+        "bottom": "0"
+      },
+      "logo": {
+        "icon": "assets/logo.svg",
+        "text": "Шаблон сайта",
+        "iconSize": 24
+      },
+      "menuItems": [
+        {
+          "text": "О шаблоне",
+          "href": "about.html"
+        },
+        {
+          "text": "Карта",
+          "href": " map.html"
+        }
+      ],
+      "copyright": "© 2025 Название"
+    }
+  ]
+};
+        
+        // Initialize Page Constructor when client bundle loads
+        function initializePageConstructor() {
+            if (typeof window.hydratePageConstructor === 'function') {
+                try {
+                    window.hydratePageConstructor({
+                        pageConfig: pageConfig,
+                        theme: 'light',
+                        navigation: {
+  "logo": {
+    "text": "Шаблон сайта",
+    "url": "index.html",
+    "icon": "assets/logoVyatkaArt.svg"
+  },
+  "header": {
+    "leftItems": [
+      {
+        "text": "Ссылка на элемент",
+        "url": "index.html#123",
+        "type": "link"
+      },
+      {
+        "text": "Ссылка на страницу",
+        "url": "about.html",
+        "type": "link"
+      },
+      {
+        "text": "Карта",
+        "url": "map.html",
+        "type": "link"
+      },
+      {
+        "text": "Внешняя ссылка",
+        "url": "https://yandex.com/",
+        "type": "link"
+      }
+    ],
+    "withBorder": true,
+    "withBorderOnScroll": true
+  },
+  "footer": {
+    "leftItems": [
+      {
+        "text": "Пользовательское соглашение",
+        "url": "privacy.html",
+        "type": "link"
+      }
+    ],
+    "rightItems": [
+      {
+        "text": "© 2025 Название",
+        "type": "text"
+      }
+    ]
+  }
+}
+                    });
+                } catch (error) {
+                    console.error('Error initializing Page Constructor:', error);
+                    
+                    // Show error message
+                    const rootElement = document.getElementById('root');
+                    if (rootElement) {
+                        rootElement.innerHTML = `
+                            <div class="ssr-error">
+                                <h2>Error Loading Page Constructor</h2>
+                                <p>${error.message}</p>
+                                <details>
+                                    <summary>Debug Information</summary>
+                                    <pre>${JSON.stringify({
+                                        userAgent: navigator.userAgent,
+                                        pageConfig: pageConfig,
+                                        error: error.message
+                                    }, null, 2)}</pre>
+                                </details>
+                            </div>
+                        `;
+                    }
+                }
+            } else {
+                // Retry after a short delay if client bundle isn't loaded yet
+                setTimeout(initializePageConstructor, 100);
+            }
+        }
+        
+        // Start initialization when page loads
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initializePageConstructor);
+        } else {
+            initializePageConstructor();
+        }
+    </script>
+    
+    <!-- Custom JavaScript -->
+    
+</body>
+</html>
